@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 namespace DateChanger
@@ -39,7 +40,9 @@ namespace DateChanger
             st.wMilliseconds = Convert.ToInt16(DateTime.UtcNow.Millisecond);
             SetSystemTime(ref st);
 
-            // Process.Start("");
+            Process.Start("C:\\Users\\Max\\Desktop\\FMRTE1932\\FMRTE.exe");
+
+            System.Threading.Thread.Sleep(1000);
             st.wYear = Convert.ToInt16(tmp.Year);
             st.wMonth = Convert.ToInt16(tmp.Month);
             st.wDay = Convert.ToInt16(tmp.Day);
