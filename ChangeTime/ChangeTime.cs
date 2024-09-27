@@ -39,9 +39,7 @@ namespace DateChanger
             st.wSecond = Convert.ToInt16(DateTime.UtcNow.Second);
             st.wMilliseconds = Convert.ToInt16(DateTime.UtcNow.Millisecond);
             SetSystemTime(ref st);
-
-            Process.Start("C:\\Users\\Max\\Desktop\\FMRTE1932\\FMRTE.exe");
-
+    
             System.Threading.Thread.Sleep(1000);
             st.wYear = Convert.ToInt16(tmp.Year);
             st.wMonth = Convert.ToInt16(tmp.Month);
